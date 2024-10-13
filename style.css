@@ -1,0 +1,131 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url("images/m3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.l_btn{
+    
+    font-size: small;
+    font-weight: 100;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border:solid 1px aliceblue;
+    color: white;
+    font-weight: 700;
+    background-color:rgb(12, 3, 119) ;
+    margin-top: -5px;
+ 
+    
+    
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: rgb(142, 139, 139);
+    padding: 1rem;
+    height: 7vh;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+   color: rgb(142, 139, 139);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: aliceblue;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.div1{
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr;
+    color: rgb(142, 139, 139);
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+h3{
+    color: rgb(230, 224, 224);
+
+}
+.div2{
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 30px;
+}
+.btn1{
+    color: aliceblue;
+    background-color: rgb(8, 2, 75);
+    border:solid 1px aliceblue;
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+    font-size: medium;
+    font-weight: 700;
+}
+.btn2{
+    color: black;
+    font-size: medium;
+    font-weight: 700;
+    background-color:aliceblue;
+    border:solid 2px aliceblue;
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+
+}
+
+
+.welcome{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}

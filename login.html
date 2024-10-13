@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMarga</title>
+     <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url("images/login_bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: #fff;
+    padding: 1rem;
+    height: 7vh;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #ccc;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.div1{
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr;
+    color: rgb(142, 139, 139);
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+h1{
+    color: rgb(230, 224, 224);
+
+}
+.div2{
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 30px;
+}
+.btn1{
+    color: aliceblue;
+    background-color: rgb(8, 2, 75);
+    border:solid 1px aliceblue;
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+    font-size: medium;
+    font-weight: 700;
+}
+.btn2{
+    color: black;
+    font-size: medium;
+    font-weight: 700;
+    background-color:aliceblue;
+    border:solid 2px aliceblue;
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+
+}
+.l_btn{
+    
+    font-size: medium;
+    font-weight: 500;
+    
+    
+}
+.welcome{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+   
+}
+.login{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 60px;
+    border:solid 1px #818080;
+    border-radius: 20px;
+    margin-right: 400px;
+    margin-left: 400px;
+    padding-bottom: 40px;
+    box-shadow: 4px 4px 4px #818080 ;
+ 
+ 
+    
+}
+#username,#password{
+    opacity: 0.3;
+    height: 30px;
+    width: 400px;
+    color:black;
+    font-weight: 800;
+}
+.login_btn{
+    height: 50px;
+    width: 405px;
+    background-color:  rgb(8, 2, 75);
+    border: solid 2px  rgb(8, 2, 75);
+    color: white;
+    font-weight: 700;
+}
+.login{
+    display: grid;
+    gap: 10px;
+   
+}
+.reg{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+     gap: 170px;
+    
+}
+.r1{
+    color: #818080;
+    text-decoration: none;
+}
+
+.h1{
+    font-size: 50px;
+}
+     </style>
+</head>
+<body> 
+     
+    
+       <div class="login">
+       <h1 class="h1">Login</h1>
+       
+       <input type="text" name="n1" id="username" placeholder="Username or email">
+       <br>
+      <br>
+       <input type="text" name="n2" id="password" placeholder="Password">
+       <br> <br>
+       <button class="login_btn">Login</button> <br>
+       <div class="reg">
+        <div><a href="#" class="r1">Register</a></div>
+        <div><a href="#" class="r1">Forgot your password ?</a> </div>
+       </div>
+    
+   </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
